@@ -8,8 +8,8 @@ permissions:
   contents: read
 
 env:
-  AWS_REGION: us-east-1
-  ROLE_ARN: arn:aws:iam::571721033023:role/github-terraform-role
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  ROLE_ARN: ${{ secrets.ROLE_ARN }}
 
 jobs:
   destroy:
